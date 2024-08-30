@@ -1,0 +1,22 @@
+{
+    "name": "Python 3.12 Jupyter Dev Container",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": "."
+    },
+    "forwardPorts": [8888],
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-azuretools.vscode-docker"
+    ],
+    "postCreateCommand": "pip install --upgrade pip",
+    "remoteUser": "root",
+    "workspaceFolder": "/Nasir-Memon",
+    "runArgs": [
+      "--init"
+    ]
+  }
+  
